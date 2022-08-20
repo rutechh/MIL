@@ -1,45 +1,33 @@
-<div class="relative bg-cover bg-no-repeat w-full h-screen" style="background-image:url('/assets/images/mojec.jpg')">
-</div>
-<section class="w-full absolute top-0 h-screen bg-[#323e61]/90 ">
-  <div class="container mx-auto pt-6">
-    <app-header></app-header>
-    <div class="flex justify-between mt-10">
-      <div>
-        <img src="assets/images/hero.png" alt="" class="animate-pulse">
-      </div>
-      <div class="mt-40">
-        <h1 class="text-6xl text-[#43d8db] font-bold">Metering Service Hub</h1>
-        <p class="text-white text-center pt-2 text-xl">Stay in control of your electricity cost.</p>
-        <div class="text-center pt-8">
-          <a href="https://technician.meterservicehub.com/" class="btn animate-spin">Get Started</a>
-        </div>
+<header class="absolute top-0 z-50 w-full">
+  <div class="container mx-auto">
+    <div class="flex flex-row justify-between pt-3">
+      <a href="#"><img src="assets/images/logo.svg" alt="" class="w-24"></a>
+      <div class="">
+        <ul class="nav-menu hidden md:inline-flex space-x-6 text-[#26528F] text-lg font-bold">
+          <li><a (click)="scroll(dashboard)" class="nav">Dashboard</a></li>
+          <li><a (click)="scroll(MSH)" class="nav">MSH</a></li>
+          <li><a (click)="scroll(COMS)" class="nav">COMS </a></li>
+          <li><a (click)="scroll(FMMS)" class="nav">FMMS</a></li>
+        </ul>
       </div>
     </div>
   </div>
-</section>
+</header>
 
-
-<!-- <section>
+<section>
   <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide>
-      <div class="relative bg-cover bg-no-repeat w-full h-screen"
-        style="background-image:url('/assets/images/mojec.jpg')">
-      </div>
-      <div class="w-full absolute top-0 h-screen bg-black/75 ">
+      <div class="w-full relative top-0 h-screen flex items-center">
         <div class="container mx-auto pt-6">
-          <div class="flex flex-row justify-between">
-            <a href="#"><img src="assets/images/logo.png" alt="" class="w-16"></a>
-            <a href="#"
-              class="text-[#f9fcfc] h-12 w-12 text-xl border-[#f9fcfc] border-4 rounded-full pl-1 pt-1">MIL</a>
-          </div>
-          <div class="flex justify-between mt-10">
+          <div class="flex justify-around mt-10">
             <div>
-              <img src="assets/images/hero.png" alt="">
+              <img src="assets/images/hero.png" class="rounded-2xl" alt="">
             </div>
             <div class="mt-40">
-              <h1 class="text-6xl text-[#43d8db] font-bold">Metering Service Hub</h1>
-              <p class="text-white text-center pt-2 text-xl">Stay in control of your electricity cost.</p>
-              <div class="text-center pt-8">
+              <h1 class="text-4xl text-[#26528F] font-bold">Meter Service Dashboard</h1>
+              <p class="text-gray-700 text-center pt-2">Stay in control of your electricity cost.</p>
+              <div class="text-center pt-8 space-x-10 mx-auto">
+                <a (click)="scroll(dashboard)" class="read-more">Read more</a>
                 <a href="https://technician.meterservicehub.com/" class="btn">Get Started</a>
               </div>
             </div>
@@ -48,24 +36,17 @@
       </div>
     </ng-template>
     <ng-template carouselSlide>
-      <div class="relative bg-cover bg-no-repeat w-full h-screen"
-        style="background-image:url('/assets/images/mojec.jpg')">
-      </div>
-      <div class="w-full absolute top-0 h-screen bg-black/75 ">
+      <div class="w-full relative top-0 h-screen flex items-center">
         <div class="container mx-auto pt-6">
-          <div class="flex flex-row justify-between">
-            <a href="#"><img src="assets/images/logo.png" alt="" class="w-32"></a>
-            <a href="#"
-              class="text-[#f9fcfc] h-12 w-12 text-xl border-[#f9fcfc] border-4 rounded-full pl-1 pt-1">MIL</a>
-          </div>
-          <div class="flex justify-between mt-10">
+          <div class="flex justify-around mt-10">
             <div>
-              <img src="assets/images/hero.png" alt="">
+              <img src="assets/images/msh2.jpg" class="rounded-2xl" alt="">
             </div>
             <div class="mt-40">
-              <h1 class="text-6xl text-[#43d8db] font-bold">Metering Service Hub</h1>
-              <p class="text-white text-center pt-2 text-xl">Stay in control of your electricity cost.</p>
-              <div class="text-center pt-8">
+              <h1 class="text-4xl text-[#26528F] font-bold">Metering Service Hub</h1>
+              <p class="text-gray-700 text-center pt-2">Stay in control of your electricity cost.</p>
+              <div class="text-center pt-8 space-x-10 mx-auto">
+                <a (click)="scroll(MSH)" class="read-more">Read more</a>
                 <button class="btn">Get Started</button>
               </div>
             </div>
@@ -74,24 +55,17 @@
       </div>
     </ng-template>
     <ng-template carouselSlide>
-      <div class="relative bg-cover bg-no-repeat w-full h-screen"
-        style="background-image:url('/assets/images/mojec.jpg')">
-      </div>
-      <div class="w-full absolute top-0 h-screen bg-black/75 ">
+      <div class="w-full relative top-0 h-screen flex items-center">
         <div class="container mx-auto pt-6">
-          <div class="flex flex-row justify-between">
-            <a href="#"><img src="assets/images/logo.png" alt="" class="w-32"></a>
-            <a href="#"
-              class="text-[#f9fcfc] h-12 w-12 text-xl border-[#f9fcfc] border-4 rounded-full pl-1 pt-1">MIL</a>
-          </div>
-          <div class="flex justify-between mt-10">
+          <div class="flex justify-around mt-10">
             <div>
-              <img src="assets/images/hero.png" alt="">
+              <img src="assets/images/meter.jpg" class="rounded-2xl" alt="">
             </div>
             <div class="mt-40">
-              <h1 class="text-6xl text-[#43d8db] font-bold">Metering Service Hub</h1>
-              <p class="text-white text-center pt-2 text-xl">Stay in control of your electricity cost.</p>
-              <div class="text-center pt-8">
+              <h1 class="text-4xl text-[#26528F] font-bold">Customer Order Management System</h1>
+              <p class="text-gray-700 text-center pt-2">Stay in control of your electricity cost.</p>
+              <div class="text-center pt-8 space-x-10 mx-auto">
+                <a (click)="scroll(COMS)" class="read-more">Read more</a>
                 <button class="btn">Get Started</button>
               </div>
             </div>
@@ -100,24 +74,17 @@
       </div>
     </ng-template>
     <ng-template carouselSlide>
-      <div class="relative bg-cover bg-no-repeat w-full h-screen"
-        style="background-image:url('/assets/images/mojec.jpg')">
-      </div>
-      <div class="w-full absolute top-0 h-screen bg-black/75 ">
+      <div class="w-full relative top-0 h-screen flex items-center">
         <div class="container mx-auto pt-6">
-          <div class="flex flex-row justify-between">
-            <a href="#"><img src="assets/images/logo.png" alt="" class="w-32"></a>
-            <a href="#"
-              class="text-[#f9fcfc] h-12 w-12 text-xl border-[#f9fcfc] border-4 rounded-full pl-1 pt-1">MIL</a>
-          </div>
-          <div class="flex justify-between mt-10">
+          <div class="flex justify-around mt-10">
             <div>
-              <img src="assets/images/hero.png" alt="">
+              <img src="assets/images/hero.png" class="rounded-2xl" alt="">
             </div>
             <div class="mt-40">
-              <h1 class="text-6xl text-[#43d8db] font-bold">Metering Service Hub</h1>
-              <p class="text-white text-center pt-2 text-xl">Stay in control of your electricity cost.</p>
-              <div class="text-center pt-8">
+              <h1 class="text-4xl text-[#26528F] font-bold">Faulty Meter Management System</h1>
+              <p class="text-gray-700 text-center pt-2">Stay in control of your electricity cost.</p>
+              <div class="text-center pt-8 space-x-10 mx-auto">
+                <a (click)="scroll(FMMS)" class="read-more">Read more</a>
                 <button class="btn">Get Started</button>
               </div>
             </div>
@@ -126,10 +93,10 @@
       </div>
     </ng-template>
   </owl-carousel-o>
-</section> -->
+</section>
 
 
-<section class="w-full bg-sky-50 pb-16">
+<section class="w-full bg-[#26528F] pb-16 text-white" #dashboard>
   <div class="container mx-auto">
     <div class="pt-20">
       <p class="md:text-[40px] text-[36px] font-bold">Metering Service Hub</p>
@@ -146,7 +113,7 @@
           </div>
           <div class="pl-6">
             <p class="text-[16px] md:text-[20px] font-bold">Sign up on mobile app or web</p>
-            <p class="pt-3 text-gray-600">Enter your mobile number, a 6-digit OTP Code will be sent to your
+            <p class="pt-3 text-gray-400">Enter your mobile number, a 6-digit OTP Code will be sent to your
               mobile number via text. Enter the 6-digit code received.</p>
           </div>
         </div>
@@ -160,7 +127,7 @@
           </div>
           <div class="pl-6 ">
             <p class="text-[16px] md:text-[20px] font-bold">Register an account</p>
-            <p class="pt-3 text-gray-600">If you haven't registered before by clicking on "Profile" and enter
+            <p class="pt-3 text-gray-400">If you haven't registered before by clicking on "Profile" and enter
               all required details.</p>
           </div>
         </div>
@@ -172,7 +139,7 @@
           </div>
           <div class="pl-6">
             <p class="text-[16px] md:text-[20px] font-bold">Appy for Product Lease program (PLP)</p>
-            <p class="pt-3 text-gray-600">Click on "Product Lease Program”, Request a PLP, Fill the PLP Form and
+            <p class="pt-3 text-gray-400">Click on "Product Lease Program”, Request a PLP, Fill the PLP Form and
               Submit.</p>
           </div>
         </div>
@@ -192,7 +159,7 @@
   </div>
 </section>
 
-<section class="w-full bg-[#323e61] pb-16 text-white">
+<section class="w-full pb-16 text-[#26528F]" #MSH>
   <div class="container mx-auto">
 
     <div class="md:flex md:flex-row md:justify-between pt-20">
@@ -254,7 +221,7 @@
   </div>
 </section>
 
-<section class="w-full bg-sky-50 pb-16">
+<section class="w-full bg-[#26528F] pb-16 text-white" #COMS>
   <div class="container mx-auto">
     <div class="pt-20">
       <p class="md:text-[40px] text-[36px] font-bold">Faulty Meter</p>
@@ -271,7 +238,7 @@
           </div>
           <div class="pl-6">
             <p class="text-[16px] md:text-[20px] font-bold">Sign up on mobile app or web</p>
-            <p class="pt-3 text-gray-600">Enter your mobile number, a 6-digit OTP Code will be sent to your
+            <p class="pt-3 text-gray-400">Enter your mobile number, a 6-digit OTP Code will be sent to your
               mobile number via text. Enter the 6-digit code received.</p>
           </div>
         </div>
@@ -285,7 +252,7 @@
           </div>
           <div class="pl-6 ">
             <p class="text-[16px] md:text-[20px] font-bold">Register an account</p>
-            <p class="pt-3 text-gray-600">If you haven't registered before by clicking on "Profile" and enter
+            <p class="pt-3 text-gray-400">If you haven't registered before by clicking on "Profile" and enter
               all required details.</p>
           </div>
         </div>
@@ -297,7 +264,7 @@
           </div>
           <div class="pl-6">
             <p class="text-[16px] md:text-[20px] font-bold">Appy for Product Lease program (PLP)</p>
-            <p class="pt-3 text-gray-600">Click on "Product Lease Program”, Request a PLP, Fill the PLP Form and
+            <p class="pt-3 text-gray-400">Click on "Product Lease Program”, Request a PLP, Fill the PLP Form and
               Submit.</p>
           </div>
         </div>
@@ -316,7 +283,7 @@
   </div>
 </section>
 
-<section class="w-full bg-[#323e61] pb-16 text-white">
+<section class="w-full pb-16 text-[#26528F]" #FMMS>
   <div class="container mx-auto">
 
     <div class="md:flex md:flex-row md:justify-between pt-20">
@@ -378,4 +345,8 @@
 
     </div>
   </div>
+</section>
+
+<section class="w-full bg-[#26528F] py-5 text-white">
+  <div class="container mx-auto text-center"> MOJEC INTERNATIONAL &copy; {{ year }}  </div>
 </section>
