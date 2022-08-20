@@ -7,7 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./msh.component.scss']
 })
 export class MshComponent implements OnInit {
-
+  year: number = new Date().getFullYear();
   constructor() { }
 
   ngOnInit() {
@@ -15,14 +15,13 @@ export class MshComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
-    autoplayTimeout: 1000,
     autoplayHoverPause: true,
-		autoplaySpeed: 900,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
     dots: false,
-    navSpeed: 600,
+		autoplaySpeed: 1000,
+    navSpeed: 700,
     navText: [''],
     responsive: {
       0: {
@@ -38,7 +37,11 @@ export class MshComponent implements OnInit {
         items: 1
       }
     },
-    nav: true
+    nav: false
+  }
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
   }
 
 }
